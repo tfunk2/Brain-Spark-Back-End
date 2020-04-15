@@ -1,0 +1,2 @@
+class DateFact < ApplicationRecord
+end

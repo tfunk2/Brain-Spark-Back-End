@@ -1,0 +1,2 @@
+class NumberFact < ApplicationRecord
+end

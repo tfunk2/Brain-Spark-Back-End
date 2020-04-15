@@ -1,0 +1,2 @@
+class MathQuestion < ApplicationRecord
+end
