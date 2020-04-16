@@ -1,20 +1,25 @@
 class UsersController < ApplicationController
+    def index
+        @users = User.all
+        render json: @users
+    end
     def show
         @user = User.find(params[:id])
+        render json: @user
     end
 
     def create
-        @new_user = User.new(user_params) 
-        if @new_user.save
-            render json: @new_user
-          else
-            render json: @new_user.errors.messages
-          end
+        @new_user = User.create(
+            username: params[:username],
+            password_digest: params[:password_digest],
+            lifetime_score: 0
+        ) 
+        render json: @new_user
     end
 
-    private
+    # private
 
-    def user_params
-        params.require(:user).permit([:username, :password, :lifetime_score])
-    end
+    # def user_params
+    #     params.require(:user).permit([:username, :password_digest, :lifetime_score])
+    # end
 end

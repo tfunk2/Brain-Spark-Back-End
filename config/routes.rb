@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, only: [:show, :create]
-  resources :lifetime_scores, only: [:index, :create, :update]
+  resources :users, only: [:index, :show, :create]
   resources :math_questions, only: [:index]
   resources :jokes, only: [:index, :show]
   resources :date_facts, only: [:index]

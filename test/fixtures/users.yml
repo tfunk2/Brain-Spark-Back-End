@@ -3,9 +3,9 @@
 one:
   username: MyString
   password_digest: MyString
-  lifetime_score: one
+  lifetime_score: 1
 
 two:
   username: MyString
   password_digest: MyString
-  lifetime_score: two
+  lifetime_score: 1
