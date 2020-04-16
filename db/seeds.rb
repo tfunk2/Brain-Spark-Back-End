@@ -14,8 +14,6 @@ require 'rest-client'
 # Joke.destroy_all
 # MathQuestion.destroy_all
 
-LifetimeScore.create()
-
 # # To seed this database, you will need to do each API request one at a time, leaving the others commented out,
 # # this is because most of these API calls will require you to change things to get all the seeds necessary.
 

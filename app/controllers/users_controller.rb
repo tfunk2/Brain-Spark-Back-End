@@ -9,12 +9,16 @@ class UsersController < ApplicationController
     end
 
     def create
-        @new_user = User.create(
+        @new_user = User.new(
             username: params[:username],
             password_digest: params[:password_digest],
             lifetime_score: 0
         ) 
-        render json: @new_user
+        if @new_user.save
+            render json: @new_user
+        else
+            render json: @new_user.errors.messages
+        end
     end
 
     def update
