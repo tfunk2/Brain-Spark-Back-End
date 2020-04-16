@@ -17,6 +17,21 @@ class UsersController < ApplicationController
         render json: @new_user
     end
 
+    def update
+        found_user = User.find(params[:id])
+        @update_user = found_user.update(
+            lifetime_score: params[:lifetime_score]
+        )
+        render json: @update_user
+    end
+
+    def destroy
+        found_user = User.find(params[:id])
+        @deleted_user = found_user.destroy
+
+        render json: @deleted_user
+    end
+
     # private
 
     # def user_params
