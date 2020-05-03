@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_04_15_213128) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "date_facts", force: :cascade do |t|
     t.string "date_of_fact"
     t.string "fact"

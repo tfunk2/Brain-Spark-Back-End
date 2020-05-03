@@ -19,11 +19,11 @@ require 'rest-client'
 
 
 # # Go to the Open Trivia DB website to generate new URLs with different categories, difficulties, etc.
-# # You will want to choose 50 questions, since it is the max. 'Rails db:seed' each category 2 times to get 150.
+# # You will want to choose 50 questions, since it is the max. 'Rails db:seed' each category 3 times to get 150.
 # # Categories needed are general knowledge, geography, history, science & nature, science & computers 
 
 # response = RestClient.get(
-#        "https://opentdb.com/api.php?amount=50&category=18&type=multiple")
+#        "https://opentdb.com/api.php?amount=50&category=23&type=multiple")
 
 #    result = JSON.parse(response)
 #     result['results'].each do |trivium|
