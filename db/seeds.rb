@@ -44,36 +44,190 @@ require 'rest-client'
 # # there is 31 so there is a fact associated with every possible day of the month, ex. If the date 
 # # was 10/12 , it would give a random fact about the number 12.  
 
-i = 0
-response = RestClient.get("http://numbersapi.com/1..31")
-result = JSON.parse(response).to_a
+# i = 0
+# response = RestClient.get("http://numbersapi.com/1..31")
+# result = JSON.parse(response).to_a
 
-while (i < 31) do
+# while (i < 31) do
     
-    NumberFact.create(
-        number: result[i][0],
-        fact: result[i][1]
-    )
-    i += 1
-end
+#     NumberFact.create(
+#         number: result[i][0],
+#         fact: result[i][1]
+#     )
+#     i += 1
+# end
 
 
 # # Had to do this one month at a time to change the number of days
 
-# month = 1
-# day = 1
-# while (day <= 31) do
+january = 1
+day1 = 25
+while (day1 <= 31) do
 
-#     response = RestClient.get("http://numbersapi.com/#{month}/#{day}/date?json")
-#     result = JSON.parse(response)
+    response = RestClient.get("http://numbersapi.com/#{january}/#{day1}/date?json")
+    result = JSON.parse(response)
 
-#     DateFact.create(
-#         date_of_fact: "#{month}/#{day}",
-#         fact: result["text"]
-#     )
-#     day += 1
-# end
+    DateFact.create(
+        date_of_fact: "#{january}/#{day1}",
+        fact: result["text"]
+    )
+    day1 += 1
+end
+ 
+february = 2
+day2 = 25
+while (day2 <= 29) do
 
+    response = RestClient.get("http://numbersapi.com/#{february}/#{day2}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{february}/#{day2}",
+        fact: result["text"]
+    )
+    day2 += 1
+end
+ 
+march = 3
+day3 = 25
+while (day3 <= 31) do
+
+    response = RestClient.get("http://numbersapi.com/#{march}/#{day3}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{march}/#{day3}",
+        fact: result["text"]
+    )
+    day3 += 1
+end
+ 
+april = 4
+day4 = 25
+while (day4 <= 30) do
+
+    response = RestClient.get("http://numbersapi.com/#{april}/#{day4}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{april}/#{day4}",
+        fact: result["text"]
+    )
+    day4 += 1
+end
+ 
+may = 5
+day5 = 25
+while (day5 <= 31) do
+
+    response = RestClient.get("http://numbersapi.com/#{may}/#{day5}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{may}/#{day5}",
+        fact: result["text"]
+    )
+    day5 += 1
+end
+ 
+june = 6
+day6 = 25
+while (day6 <= 30) do
+
+    response = RestClient.get("http://numbersapi.com/#{june}/#{day6}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{june}/#{day6}",
+        fact: result["text"]
+    )
+    day6 += 1
+end
+ 
+july = 7
+day7 = 25
+while (day7 <= 31) do
+
+    response = RestClient.get("http://numbersapi.com/#{july}/#{day7}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{july}/#{day7}",
+        fact: result["text"]
+    )
+    day7 += 1
+end
+ 
+august = 8
+day8 = 25
+while (day8 <= 31) do
+
+    response = RestClient.get("http://numbersapi.com/#{august}/#{day8}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{august}/#{day8}",
+        fact: result["text"]
+    )
+    day8 += 1
+end
+ 
+september = 9
+day9 = 25
+while (day9 <= 30) do
+
+    response = RestClient.get("http://numbersapi.com/#{september}/#{day9}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{september}/#{day9}",
+        fact: result["text"]
+    )
+    day9 += 1
+end
+ 
+october = 10
+day10 = 25
+while (day10 <= 31) do
+
+    response = RestClient.get("http://numbersapi.com/#{october}/#{day10}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{october}/#{day10}",
+        fact: result["text"]
+    )
+    day10 += 1
+end
+ 
+november = 11
+day11 = 25
+while (day11 <= 30) do
+
+    response = RestClient.get("http://numbersapi.com/#{november}/#{day11}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{november}/#{day11}",
+        fact: result["text"]
+    )
+    day11 += 1
+end
+ 
+december = 12
+day12 = 25
+while (day12 <= 31) do
+
+    response = RestClient.get("http://numbersapi.com/#{december}/#{day12}/date?json")
+    result = JSON.parse(response)
+
+    DateFact.create(
+        date_of_fact: "#{december}/#{day12}",
+        fact: result["text"]
+    )
+    day12 += 1
+end
+ 
 # # Ten jokes is the most you can get at once, 
 
 # response = RestClient.get("https://official-joke-api.appspot.com/jokes/ten")
