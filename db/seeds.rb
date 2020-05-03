@@ -23,7 +23,7 @@ require 'rest-client'
 # # Categories needed are general knowledge, geography, history, science & nature, science & computers 
 
 response = RestClient.get(
-       "https://opentdb.com/api.php?amount=50&category=22&type=multiple")
+       "https://opentdb.com/api.php?amount=50&category=23&type=multiple")
 
    result = JSON.parse(response)
     result['results'].each do |trivium|
