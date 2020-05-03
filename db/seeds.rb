@@ -22,22 +22,22 @@ require 'rest-client'
 # # You will want to choose 50 questions, since it is the max. 'Rails db:seed' each category 3 times to get 150.
 # # Categories needed are general knowledge, geography, history, science & nature, science & computers 
 
-# response = RestClient.get(
-#        "https://opentdb.com/api.php?amount=50&category=23&type=multiple")
+response = RestClient.get(
+       "https://opentdb.com/api.php?amount=50&category=9&type=multiple")
 
-#    result = JSON.parse(response)
-#     result['results'].each do |trivium|
+   result = JSON.parse(response)
+    result['results'].each do |trivium|
         
-#         Trivium.create(
-#             category: trivium["category"],
-#             difficulty: trivium["difficulty"],
-#             question: trivium["question"],
-#             correct_answer: trivium["correct_answer"],
-#             incorrect_answer_1: trivium["incorrect_answers"][0],
-#             incorrect_answer_2: trivium["incorrect_answers"][1],
-#             incorrect_answer_3: trivium["incorrect_answers"][2]
-#         )
-#     end
+        Trivium.create(
+            category: trivium["category"],
+            difficulty: trivium["difficulty"],
+            question: trivium["question"],
+            correct_answer: trivium["correct_answer"],
+            incorrect_answer_1: trivium["incorrect_answers"][0],
+            incorrect_answer_2: trivium["incorrect_answers"][1],
+            incorrect_answer_3: trivium["incorrect_answers"][2]
+        )
+    end
 
 
 # # Run rails db:seed with the below uncommented 5 times to get 155 total NumberFact instances,
