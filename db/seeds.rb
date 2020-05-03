@@ -61,8 +61,8 @@ require 'rest-client'
 # # Had to do this one month at a time to change the number of days
 
 january = 1
-day1 = 20
-while (day1 <= 24) do
+day1 = 15
+while (day1 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{january}/#{day1}/date?json")
     result = JSON.parse(response)
@@ -75,8 +75,8 @@ while (day1 <= 24) do
 end
  
 february = 2
-day2 = 20
-while (day2 <= 24) do
+day2 = 15
+while (day2 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{february}/#{day2}/date?json")
     result = JSON.parse(response)
@@ -89,8 +89,8 @@ while (day2 <= 24) do
 end
  
 march = 3
-day3 = 20
-while (day3 <= 24) do
+day3 = 15
+while (day3 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{march}/#{day3}/date?json")
     result = JSON.parse(response)
@@ -103,8 +103,8 @@ while (day3 <= 24) do
 end
  
 april = 4
-day4 = 20
-while (day4 <= 24) do
+day4 = 15
+while (day4 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{april}/#{day4}/date?json")
     result = JSON.parse(response)
@@ -117,8 +117,8 @@ while (day4 <= 24) do
 end
  
 may = 5
-day5 = 20
-while (day5 <= 24) do
+day5 = 15
+while (day5 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{may}/#{day5}/date?json")
     result = JSON.parse(response)
@@ -131,8 +131,8 @@ while (day5 <= 24) do
 end
  
 june = 6
-day6 = 20
-while (day6 <= 24) do
+day6 = 15
+while (day6 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{june}/#{day6}/date?json")
     result = JSON.parse(response)
@@ -145,8 +145,8 @@ while (day6 <= 24) do
 end
  
 july = 7
-day7 = 20
-while (day7 <= 24) do
+day7 = 15
+while (day7 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{july}/#{day7}/date?json")
     result = JSON.parse(response)
@@ -159,8 +159,8 @@ while (day7 <= 24) do
 end
  
 august = 8
-day8 = 20
-while (day8 <= 24) do
+day8 = 15
+while (day8 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{august}/#{day8}/date?json")
     result = JSON.parse(response)
@@ -173,8 +173,8 @@ while (day8 <= 24) do
 end
  
 september = 9
-day9 = 20
-while (day9 <= 24) do
+day9 = 15
+while (day9 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{september}/#{day9}/date?json")
     result = JSON.parse(response)
@@ -187,8 +187,8 @@ while (day9 <= 24) do
 end
  
 october = 10
-day10 = 20
-while (day10 <= 24) do
+day10 = 15
+while (day10 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{october}/#{day10}/date?json")
     result = JSON.parse(response)
@@ -201,8 +201,8 @@ while (day10 <= 24) do
 end
  
 november = 11
-day11 = 20
-while (day11 <= 24) do
+day11 = 15
+while (day11 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{november}/#{day11}/date?json")
     result = JSON.parse(response)
@@ -215,8 +215,8 @@ while (day11 <= 24) do
 end
  
 december = 12
-day12 = 20
-while (day12 <= 24) do
+day12 = 15
+while (day12 <= 19) do
 
     response = RestClient.get("http://numbersapi.com/#{december}/#{day12}/date?json")
     result = JSON.parse(response)
